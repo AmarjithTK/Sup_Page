@@ -49,29 +49,34 @@ header {
     word-spacing: 30px; }
   /* line 51, sass/layout/_header.scss */
   header nav ul li {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
     list-style: none;
     display: inline-block; }
-    /* line 55, sass/layout/_header.scss */
+    /* line 58, sass/layout/_header.scss */
     header nav ul li:last-child {
       padding: 10px;
       border-radius: 7px;
       border: 0;
       font-weight: 100;
-      background-color: #080946;
+      background-color: rgba(0, 0, 0, 0.849);
       transition-timing-function: ease-in-out;
       transition: all 0.8s; }
-      /* line 65, sass/layout/_header.scss */
+      /* line 68, sass/layout/_header.scss */
       header nav ul li:last-child:hover {
         background-color: #413d3d; }
-  /* line 73, sass/layout/_header.scss */
+  /* line 76, sass/layout/_header.scss */
   header nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 2px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 100; }
-  /* line 85, sass/layout/_header.scss */
+    font-weight: 100;
+    text-transform: uppercase; }
+  /* line 88, sass/layout/_header.scss */
   header #logo {
     position: absolute;
     left: 50%;
@@ -79,22 +84,22 @@ header {
     transform: translate(-50%, -35%);
     width: 40%;
     height: 40%; }
-  /* line 91, sass/layout/_header.scss */
+  /* line 94, sass/layout/_header.scss */
   header .wrapper {
     position: absolute;
     left: 50%;
     top: 85%;
     transform: translate(-50%, -85%);
     height: auto; }
-    /* line 94, sass/layout/_header.scss */
+    /* line 97, sass/layout/_header.scss */
     header .wrapper span {
       font-size: 35px;
       color: white;
-      font-weight: 800;
+      font-weight: 300;
       word-spacing: 0px;
       letter-spacing: 3px;
       font-family: 'Montserrat', sans-serif; }
-    /* line 100, sass/layout/_header.scss */
+    /* line 103, sass/layout/_header.scss */
     header .wrapper button {
       margin-left: 32.5%;
       width: 35%;
@@ -103,18 +108,49 @@ header {
       border-radius: 7px;
       border: 0;
       font-weight: 100;
-      background-color: #080946;
+      background-color: rgba(0, 0, 0, 0.849);
       transition-timing-function: ease-in-out;
       transition: all 0.8s; }
-      /* line 112, sass/layout/_header.scss */
+      /* line 115, sass/layout/_header.scss */
       header .wrapper button:hover {
         background-color: #413d3d; }
-    /* line 118, sass/layout/_header.scss */
+    /* line 121, sass/layout/_header.scss */
     header .wrapper a {
       font-family: 'Montserrat', sans-serif;
       text-decoration: none;
       font-size: 20px;
       color: white; }
+
+/* line 135, sass/layout/_header.scss */
+.sidenav {
+  background-color: rgba(0, 0, 0, 0.849);
+  width: 60px;
+  height: 70%;
+  display: block;
+  position: absolute;
+  left: 5%;
+  top: 65%;
+  transform: translate(-5%, -65%);
+  position: fixed;
+  border-radius: 7px; }
+  /* line 143, sass/layout/_header.scss */
+  .sidenav .icons {
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    margin-top: 5%; }
+  /* line 149, sass/layout/_header.scss */
+  .sidenav i {
+    font-size: 32px;
+    color: white;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    margin: 20px 0;
+    transition: all 0.8s; }
+    /* line 157, sass/layout/_header.scss */
+    .sidenav i:hover {
+      color: #413d3d; }
 
 /* line 1, sass/layout/_about.scss */
 .About {
