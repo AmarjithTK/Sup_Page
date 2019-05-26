@@ -216,7 +216,7 @@ header {
     /* line 78, sass/layout/_about.scss */
     .About .container .items {
       width: 300px;
-      margin: 10px;
+      margin: 30px;
       height: 350px;
       background-color: #d63031;
       box-shadow: #dd3e3e 5px 1px 50px 1px;
